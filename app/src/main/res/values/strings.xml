@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shared Element Transaction</string>
+    <string name="title">Lorem Ipsum</string>
+    <string name="description">It is a long established fact that a reader will be distracted by
+        thereadable content of a page when looking at its layout. The point of using Lorem Ipsum
+        isthat it has a more-or-less normal distribution of letters, as opposed to using </string>
+</resources>

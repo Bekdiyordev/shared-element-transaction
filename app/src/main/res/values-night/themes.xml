@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SharedElementTransaction" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+    <style name="SplashScreen" parent="Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/Base.Theme.SharedElementTransaction</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/app_logo_svg</item>
+    </style>
+</resources>
