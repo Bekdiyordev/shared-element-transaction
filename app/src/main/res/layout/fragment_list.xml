@@ -9,10 +9,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
-        android:clipToPadding="false"
-        android:clipChildren="false"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
         app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
         tools:listitem="@layout/item_image" />
 </LinearLayout>

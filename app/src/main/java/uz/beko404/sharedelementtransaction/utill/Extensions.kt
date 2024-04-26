@@ -7,10 +7,12 @@ import androidx.navigation.NavGraph
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
 
-fun NavController.navigateSafe(@IdRes resId: Int,
-                               args: Bundle?,
-                               navOptions: NavOptions?,
-                               navigatorExtras: Navigator.Extras?) {
+fun NavController.navigateSafe(
+    @IdRes resId: Int,
+    args: Bundle?,
+    navOptions: NavOptions?,
+    navigatorExtras: Navigator.Extras?
+) {
     val destinationId = currentDestination?.getAction(resId)?.destinationId.orEmpty()
     currentDestination?.let { node ->
         val currentNode = when (node) {
@@ -18,7 +20,8 @@ fun NavController.navigateSafe(@IdRes resId: Int,
             else -> node.parent
         }
         if (destinationId != 0) {
-            currentNode?.findNode(destinationId)?.let { navigate(resId, args, navOptions, navigatorExtras) }
+            currentNode?.findNode(destinationId)
+                ?.let { navigate(resId, args, navOptions, navigatorExtras) }
         }
     }
 }

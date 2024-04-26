@@ -5,4 +5,4 @@
     android:layout_height="wrap_content"
     android:adjustViewBounds="true"
     android:scaleType="centerCrop"
-    android:transitionName="image_small" />
+    android:transitionName="image_ small" />

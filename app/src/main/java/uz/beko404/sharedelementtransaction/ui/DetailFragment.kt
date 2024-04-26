@@ -16,7 +16,8 @@ class DetailFragment : Fragment(R.layout.fragment_detail) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val animation = TransitionInflater.from(requireContext()).inflateTransition(android.R.transition.move)
+        val animation =
+            TransitionInflater.from(requireContext()).inflateTransition(android.R.transition.move)
         binding.image.setImageResource(arguments?.getInt("image")!!)
         sharedElementEnterTransition = animation
         sharedElementReturnTransition = animation
